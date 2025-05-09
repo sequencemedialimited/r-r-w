@@ -1,0 +1,13 @@
+{
+  "name": "r-r-w",
+  "version": "0.0.0",
+  "main": "./index.mjs",
+  "scripts": {
+    "start": "node --experimental-wasm-modules ."
+  },
+  "license": "ISC",
+  "exports": {
+    "require": "./index.cjs",
+    "import": "./index.mjs"
+  }
+}
