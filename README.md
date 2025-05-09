@@ -36,7 +36,7 @@ Again (and as you're aware) that wasn't an issue for the Storybooks! So Storyboo
 
 ## CommonJS
 
-Node errors with "_WASM is currently unsupported by require_" for _CommonJS_ but I'm only really interested in getting the JS to export the `RenderWave` component at this point.
+Node errors with "_WASM is currently unsupported by require_" for _CommonJS_ but I'm only really interested in getting the JS to export the `RenderWave` component
 
 I went into the `dist` folder and removed the imports of the WASM code just to prove that the rest will compile, which it did. (I put the WASM stuff back for the same test in _ModuleJS_)
 
@@ -51,3 +51,7 @@ node --experimental-wasm-modules index.cjs
 cd r-r-w
 node --experimental-wasm-modules index.mjs
 ```
+
+Provided you can see something in your terminal representing the exported function _Node is happy_:
+
+![Screenshot of the console output](./screenshot.png)
